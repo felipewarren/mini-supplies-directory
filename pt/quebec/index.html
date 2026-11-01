@@ -16,10 +16,24 @@ main{max-width:860px;margin:auto;padding:1rem}h1{font-size:1.7rem;line-height:1.
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;background:#fff;font-size:.95em}th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}th{background:#f1ece4}
 .card{background:#fff;border:1px solid #e3ded5;border-radius:8px;padding:.9rem 1rem;margin:1rem 0}.card.own{border-color:#e0a400}
 .src{font-size:.85em;color:#555;margin:.4rem 0 0}a{color:#7a2e1f}footer{max-width:860px;margin:2rem auto;padding:1rem;border-top:1px solid #ddd;font-size:.9em;color:#555}
-</style></head>
+.mt{display:none;background:none;border:1px solid #fff8;color:#fff;font:inherit;padding:.25rem .6rem;border-radius:4px;cursor:pointer}
+.mn ul{list-style:none;margin:0;padding:0}.mn>ul{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:center}.mn li{position:relative}
+.mn button.dd{background:none;border:0;color:#fff;font:inherit;font-size:.95em;opacity:.9;cursor:pointer;padding:0}.mn button.dd::after{content:" ▾"}
+.mn .cur>button.dd{text-decoration:underline;opacity:1}.mn a[aria-current]{text-decoration:underline;font-weight:600;opacity:1}
+.mn .sub{display:flex;flex-wrap:wrap;gap:0 .6rem}
+.js .mn .sub{display:none;position:absolute;left:0;top:100%;z-index:9;background:#7a2e1f;padding:.4rem 0;min-width:12rem;border-radius:0 0 6px 6px;box-shadow:0 4px 12px #0003;flex-direction:column}
+.js .mn .sub a{display:block;padding:.3rem .9rem}.js .mn .sub a:hover,.js .mn .sub a:focus{background:#0002}
+.js .mn li.open>.sub{display:flex}@media(hover:hover) and (min-width:721px){.js .mn li:hover>.sub{display:flex}}
+@media(max-width:720px){.js .mt{display:inline-block}.js .mn{display:none;width:100%}.js .mn.open{display:block}.mn>ul{flex-direction:column;align-items:flex-start}
+.js .mn .sub{position:static;box-shadow:none;background:none;padding:0 0 0 1rem}}
+</style>
+<script>(function(){var d=document;d.documentElement.className+=' js';d.addEventListener('DOMContentLoaded',function(){var n=d.querySelector('.mn'),t=d.querySelector('.mt');if(!n)return;function c(x){n.querySelectorAll('button.dd').forEach(function(b){if(b!==x){b.setAttribute('aria-expanded','false');b.parentNode.classList.remove('open')}})}
+t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.querySelectorAll('button.dd').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var o=b.getAttribute('aria-expanded')!=='true';c(b);b.setAttribute('aria-expanded',o);b.parentNode.classList.toggle('open',o)})});
+d.addEventListener('click',function(e){if(!n.contains(e.target))c()});d.addEventListener('keydown',function(e){if(e.key==='Escape'){var f=d.activeElement&&d.activeElement.closest('li.open');c();if(f)f.querySelector('button').focus()}})})})();</script></head>
 <body>
 <header><div class="in"><a class="brand" href="../">Mini Supply Directory</a>
-<nav><a href="../">Canadá</a> · <a href="../ontario/">Ontário</a> · <a href="./" aria-current="page">Quebec</a> · <a href="../british-columbia/">Colúmbia Britânica</a> · <a href="../alberta/">Alberta</a> · <a href="../usa/">EUA</a> · <a href="../guides/scale-check/">Conferir a escala</a> · <a href="../lighting/">Iluminação</a> · <a href="../events/">Eventos</a> · <a href="../budget/">Economizar</a> · <a href="../trust/">Evitar golpes</a></nav>
+<button type="button" class="mt" aria-expanded="false" aria-controls="mn">☰ Menu</button><nav class="mn" id="mn" aria-label="Principal"><ul><li class="cur"><button type="button" class="dd" aria-expanded="false" aria-controls="m-buy">Onde comprar</button><ul class="sub" id="m-buy"><li><a href="../">Canadá</a></li><li><a href="../ontario/">Ontário</a></li><li><a href="./" aria-current="page">Quebec</a></li><li><a href="../british-columbia/">Colúmbia Britânica</a></li><li><a href="../alberta/">Alberta</a></li><li><a href="../usa/">EUA</a></li></ul></li><li><button type="button" class="dd" aria-expanded="false" aria-controls="m-guides">Guias</button><ul class="sub" id="m-guides"><li><a href="../guides/scale-check/">Conferir a escala</a></li><li><a href="../lighting/">Iluminação</a></li><li><a href="../budget/">Economizar</a></li><li><a href="../trust/">Evitar golpes</a></li></ul></li><li><a href="../events/">Eventos</a></li></ul></nav>
 <nav aria-label="Idioma"><a href="../../quebec/" hreflang="en" lang="en" title="English">EN</a> · <a href="../../fr/quebec/" hreflang="fr" lang="fr" title="Français">FR</a> · <a href="../../pt/quebec/" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)" aria-current="true">PT</a></nav></div></header>
 <main>
 <h1>Materiais para casas de bonecas e miniaturas em Quebec: lojas, feiras e clubes</h1>
