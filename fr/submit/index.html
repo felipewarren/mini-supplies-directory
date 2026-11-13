@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suggérer une boutique, un artisan, un événement ou une correction</title>
+<meta name="description" content="Proposez gratuitement une boutique, un artisan, un salon ou une correction pour le répertoire de fournitures de miniatures au Canada et aux États-Unis, par courriel.">
+<link rel="alternate" hreflang="en" href="https://felipewarren.github.io/mini-supplies-directory/submit/">
+<link rel="alternate" hreflang="fr" href="https://felipewarren.github.io/mini-supplies-directory/fr/submit/">
+<link rel="alternate" hreflang="pt-BR" href="https://felipewarren.github.io/mini-supplies-directory/pt/submit/">
+<link rel="alternate" hreflang="x-default" href="https://felipewarren.github.io/mini-supplies-directory/submit/">
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#2d3830;background:#f6faf6}
+header{background:#43725a;color:#fff}header .in{max-width:860px;margin:auto;padding:.75rem 1rem;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center}
+header a{color:#fff;text-decoration:none}.brand{font-weight:700;margin-right:auto}nav a{opacity:.9;font-size:.95em}nav a[aria-current]{text-decoration:underline}
+main{max-width:860px;margin:auto;padding:1rem}h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0}h2{font-size:1.2rem;margin:.2rem 0 .4rem}
+.meta{color:#56635a;font-size:.9em}.note{background:#eff7f0;border-left:4px solid #a7cdb3;padding:.6rem .8rem;border-radius:4px}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;background:#fff;font-size:.95em}th,td{border:1px solid #d5e5d9;padding:.45rem .55rem;text-align:left;vertical-align:top}th{background:#ebf4ed}
+.card{background:#fff;border:1px solid #dce9df;border-radius:8px;padding:.9rem 1rem;margin:1rem 0}
+.src{font-size:.85em;color:#56635a;margin:.4rem 0 0}a{color:#43725a}footer{max-width:860px;margin:2rem auto;padding:1rem;border-top:1px solid #d5e5d9;font-size:.9em;color:#56635a}footer .foot-contact{margin:.65rem 0 0}
+/* events layout */
+.sec{margin:2.2rem 0 0}.sec>h2{font-size:1.35rem;border-bottom:2px solid #43725a;padding-bottom:.25rem;margin-bottom:.8rem}
+.grp{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;margin:1.2rem 0 .3rem}
+.cc{display:inline-block;min-width:2.4em;text-align:center;font-size:.8em;font-weight:700;letter-spacing:.06em;color:#fff;background:#43725a;border-radius:4px;padding:.1em .45em}
+.cc.us{background:#3f5f86}
+.ev{display:flex;background:#fff;border:1px solid #dce9df;border-radius:8px;margin:.7rem 0;overflow:hidden}
+.dt{flex:0 0 7.2rem;background:#ebf4ed;border-right:1px solid #dce9df;text-align:center;padding:.75rem .4rem;display:flex;flex-direction:column;justify-content:center;line-height:1.1}
+.dt .m{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#43725a}
+.dt .d{font-size:1.75rem;font-weight:800;margin:.2rem 0}.dt .y{font-size:.85rem;color:#56635a}.dt .pre{font-size:.72rem;color:#56635a;text-transform:uppercase;letter-spacing:.05em}
+.us-ev .dt{background:#e8eef6}.us-ev .dt .m{color:#3f5f86}
+.bd{padding:.7rem 1rem;flex:1;min-width:0}.bd h3{font-size:1.05rem;margin:0 0 .15rem;line-height:1.3}
+.loc{margin:0;font-weight:600;font-size:.95em}.ven{margin:0;color:#3e4a42;font-size:.92em}
+.cv{font-size:.85em;color:#5d6a61;margin:.35rem 0 0}
+.gn{font-size:.85em;color:#5d6a61;margin:.5rem 0 0}
+.ann td{font-size:.93em}.ann th:first-child{width:42%}.ann th:nth-child(4){width:14%}.ann th:last-child{width:20%}.ann .nm{font-weight:600}.ann .cv{margin-top:.2rem}
+.clubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:.8rem}
+.clubs .card{margin:0;display:flex;flex-direction:column}.clubs h3{font-size:1rem;margin:0 0 .2rem;line-height:1.3}
+.clubs p{margin:.25rem 0;font-size:.92em}.clubs .k{color:#5d6a61;font-size:.8em;text-transform:uppercase;letter-spacing:.05em;display:block}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#3a7350;color:#fff;border-radius:3px;padding:.05em .45em;vertical-align:middle;margin-left:.3rem}
+@media (max-width:600px){
+ .clubs{grid-template-columns:1fr}
+ .dt{flex-basis:5.4rem;padding:.6rem .3rem}.dt .d{font-size:1.35rem}
+ .ann thead{display:none}.ann table,.ann tbody,.ann tr,.ann td{display:block;width:100%}
+ .ann tr{border:1px solid #d5e5d9;border-radius:6px;margin:0 0 .7rem;background:#fff}.ann td{border:0;border-top:1px solid #e8f1ea;padding:.35rem .6rem}.ann td:first-child{border-top:0}
+ .ann td[data-l]::before{content:attr(data-l);display:block;font-size:.72rem;color:#647168;text-transform:uppercase;letter-spacing:.05em}
+}
+.mt{display:none;background:none;border:1px solid #fff8;color:#fff;font:inherit;padding:.25rem .6rem;border-radius:4px;cursor:pointer}
+.mn ul{list-style:none;margin:0;padding:0}.mn>ul{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:center}.mn li{position:relative}
+.mn button.dd{background:none;border:0;color:#fff;font:inherit;font-size:.95em;opacity:.9;cursor:pointer;padding:0}.mn button.dd::after{content:" ▾"}
+.mn .cur>button.dd{text-decoration:underline;opacity:1}.mn a[aria-current]{text-decoration:underline;font-weight:600;opacity:1}
+.mn .sub{display:flex;flex-wrap:wrap;gap:0 .6rem}
+.js .mn .sub{display:none;position:absolute;left:0;top:100%;z-index:9;background:#43725a;padding:.4rem 0;min-width:12rem;border-radius:0 0 6px 6px;box-shadow:0 4px 12px #0003;flex-direction:column}
+.js .mn .sub a{display:block;padding:.3rem .9rem}.js .mn .sub a:hover,.js .mn .sub a:focus{background:#0002}
+.js .mn li.open>.sub{display:flex}@media(hover:hover) and (min-width:721px){.js .mn li:hover>.sub{display:flex}}
+@media(max-width:720px){.js .mt{display:inline-block}.js .mn{display:none;width:100%}.js .mn.open{display:block}.mn>ul{flex-direction:column;align-items:flex-start}
+.js .mn .sub{position:static;box-shadow:none;background:none;padding:0 0 0 1rem}}
+</style>
+<script>(function(){var d=document;d.documentElement.className+=' js';d.addEventListener('DOMContentLoaded',function(){var n=d.querySelector('.mn'),t=d.querySelector('.mt');if(!n)return;function c(x){n.querySelectorAll('button.dd').forEach(function(b){if(b!==x){b.setAttribute('aria-expanded','false');b.parentNode.classList.remove('open')}})}
+t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.querySelectorAll('button.dd').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var o=b.getAttribute('aria-expanded')!=='true';c(b);b.setAttribute('aria-expanded',o);b.parentNode.classList.toggle('open',o)})});
+d.addEventListener('click',function(e){if(!n.contains(e.target))c()});d.addEventListener('keydown',function(e){if(e.key==='Escape'){var f=d.activeElement&&d.activeElement.closest('li.open');c();if(f)f.querySelector('button').focus()}})})})();</script></head>
+<body>
+<header><div class="in"><a class="brand" href="../">Mini Supply Directory</a>
+<button type="button" class="mt" aria-expanded="false" aria-controls="mn">☰ Menu</button><nav class="mn" id="mn" aria-label="Principal"><ul><li><button type="button" class="dd" aria-expanded="false" aria-controls="m-buy">Où acheter</button><ul class="sub" id="m-buy"><li><a href="../">Canada</a></li><li><a href="../ontario/">Ontario</a></li><li><a href="../quebec/">Québec</a></li><li><a href="../british-columbia/">C.-B.</a></li><li><a href="../alberta/">Alberta</a></li><li><a href="../manitoba/">Manitoba</a></li><li><a href="../saskatchewan/">Saskatchewan</a></li><li><a href="../nova-scotia/">N.-É.</a></li><li><a href="../new-brunswick/">N.-B.</a></li><li><a href="../prince-edward-island/">Î.-P.-É.</a></li><li><a href="../newfoundland-and-labrador/">T.-N.-L.</a></li><li><a href="../canadian-territories/">Territoires</a></li><li><a href="../makers/">Artisans</a></li><li><a href="../usa/">États-Unis</a></li><li><a href="../california/">Californie</a></li></ul></li><li><button type="button" class="dd" aria-expanded="false" aria-controls="m-guides">Guides</button><ul class="sub" id="m-guides"><li><a href="../guides/scale-check/">Vérifier l’échelle</a></li><li><a href="../lighting/">Éclairage</a></li><li><a href="../budget/">Petit budget</a></li><li><a href="../trust/">Éviter les arnaques</a></li></ul></li><li><a href="../events/">Événements</a></li><li><a href="../about/">À propos</a></li><li><a href="./" aria-current="page">Suggérer</a></li></ul></nav>
+<nav aria-label="Langue"><a href="../../submit/" hreflang="en" lang="en" title="English">EN</a> · <a href="../../fr/submit/" hreflang="fr" lang="fr" title="Français" aria-current="true">FR</a> · <a href="../../pt/submit/" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)">PT</a></nav></div></header>
+<main>
+<h1>Suggérer une boutique, un artisan, un événement ou une correction</h1>
+<p class="meta">Dernière mise à jour : <strong>12 novembre 2026</strong>.</p>
+
+<p>Ce répertoire s’améliore quand les amateurs et les propriétaires de boutiques nous signalent ce qui manque ou ce qui n’est plus à jour. Envoyez-nous une boutique, un artisan, un salon ou une correction par courriel. C’est gratuit, sans formulaire ni compte à créer.</p>
+<p class="note"><strong>Courriel :</strong> <a href="mailto:miniandmaple@agentmail.to">miniandmaple@agentmail.to</a>. Les liens ci-dessous ouvrent votre application de courriel avec un court modèle déjà rempli.</p>
+
+<h2 id="shop">Suggérer une boutique ou un artisan</h2>
+<p><a href="mailto:miniandmaple@agentmail.to?subject=Nouvelle%20fiche%20%3A%20Mini%20Supply%20Directory&amp;body=Nom%20de%20la%20boutique%20ou%20de%20l%E2%80%99artisan%20%3A%0ASite%20Web%20ou%20boutique%20en%20ligne%20%28lien%29%20%3A%0AVille%20et%20province%20ou%20%C3%89tat%20%3A%0ACe%20qu%E2%80%99elle%20vend%20%28par%20exemple%20trousses%20de%20meubles%201%3A12%2C%20%C3%A9clairage%2C%20bois%2C%20outils%29%20%3A%0ALivraison%20au%20Canada%20ou%20aux%20%C3%89tats-Unis%3F%0A%C3%8Ates-vous%20le%20propri%C3%A9taire%3F%20%28oui/non%29%0A">Proposer une nouvelle fiche par courriel</a>. Veuillez indiquer :</p>
+<ul>
+<li>Le nom de la boutique ou de l’artisan et un lien vers son propre site Web ou sa boutique en ligne.</li>
+<li>La ville et la province ou l’État.</li>
+<li>Ce qu’elle vend, par exemple des trousses de meubles 1:12, de l’éclairage, du bois ou des outils.</li>
+<li>Si elle livre au Canada ou aux États-Unis.</li>
+</ul>
+<p>Les propriétaires peuvent proposer leur propre boutique. Dites-nous simplement que vous en êtes le propriétaire.</p>
+
+<h2 id="correction">Signaler une correction</h2>
+<p><a href="mailto:miniandmaple@agentmail.to?subject=Correction%20%3A%20Mini%20Supply%20Directory&amp;body=Page%20%28lien%29%20%3A%0ACe%20qui%20est%20inexact%20%3A%0ACe%20qui%20devrait%20%C3%AAtre%20%C3%A9crit%20%3A%0AUn%20lien%20qui%20montre%20la%20bonne%20information%20%3A%0A">Envoyer une correction par courriel</a> si une fiche est inexacte, si une boutique a déménagé ou fermé, ou si un lien ne fonctionne plus. Indiquez la page, ce qui est inexact et, si possible, un lien qui montre la bonne information.</p>
+
+<h2 id="event">Ajouter un salon, une vente ou un club</h2>
+<p><a href="mailto:miniandmaple@agentmail.to?subject=%C3%89v%C3%A9nement%20%3A%20Mini%20Supply%20Directory&amp;body=Nom%20du%20salon%2C%20de%20la%20vente%20ou%20du%20club%20%3A%0ADate%28s%29%20et%20ville%20%3A%0ASite%20Web%20officiel%20ou%20page%20de%20l%E2%80%99%C3%A9v%C3%A9nement%20%3A%0A">Proposer un événement par courriel</a> avec son nom, ses dates, sa ville et son site Web officiel. Les événements figurent sur la <a href="../events/">page Événements</a>.</p>
+
+<h2 id="what-happens">La suite</h2>
+<ul>
+<li>Chaque suggestion est vérifiée sur le site Web de la boutique ou de l’événement avant d’être ajoutée, comme toutes les autres fiches (voir <a href="../about/">À propos</a>).</li>
+<li>Nous ne pouvons pas ajouter une boutique dont le site est inaccessible ou impossible à confirmer. Dans ce cas, nous pourrions vous demander un autre lien officiel.</li>
+<li>Les fiches sont gratuites. Les boutiques ne peuvent pas payer pour figurer sur le site ni pour obtenir une meilleure place.</li>
+<li>Nous lisons tout, mais c’est un petit projet : les mises à jour peuvent prendre un peu de temps.</li>
+</ul>
+
+<h2 id="privacy">Votre adresse courriel</h2>
+<p>Nous utilisons votre adresse uniquement pour répondre à votre suggestion. Nous ne la publions pas, ne l’ajoutons à aucune liste d’envoi et ne la partageons pas.</p>
+
+<p>Vous pouvez aussi joindre la personne qui gère ce site par l’Instagram de Mini &amp; Maple, <a href="https://www.instagram.com/minimaplecut/" rel="noopener">@minimaplecut</a>. Mini &amp; Maple est la boutique du propriétaire du site (voir la divulgation sur la <a href="../about/">page À propos</a>).</p>
+</main>
+<footer>Vous avez repéré une erreur? <a href="mailto:miniandmaple@agentmail.to?subject=Correction%3A%20page%20Sugg%C3%A9rer">Signaler une correction</a>. Dernière mise à jour : 12 novembre 2026.
+<div class="foot-contact">Contact : <a href="mailto:miniandmaple@agentmail.to">miniandmaple@agentmail.to</a> · Mini &amp; Maple sur Instagram : <a href="https://www.instagram.com/minimaplecut/" rel="noopener">@minimaplecut</a></div></footer>
+</body></html>
